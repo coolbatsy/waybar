@@ -1,0 +1,83 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font", "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: transparent; /* Makes the bar itself invisible, only modules show */
+    color: #ffffff;
+}
+
+#workspaces,
+#mode,
+#window,
+#network,
+#pulseaudio,
+#battery,
+#clock,
+#tray {
+    background: #000000; /* AMOLED Black */
+    color: #ffffff;
+    border: 1px solid #333333; /* Sharp, subtle border */
+    border-radius: 12px;
+    margin: 4px 4px;
+    padding: 0px 12px;
+}
+
+/* Individual Module Tweaks */
+#workspaces {
+    background: #000000;
+    margin: 4px 4px;
+    padding: 0px 8px;
+    border: 1px solid #333333;
+    border-radius: 12px;
+}
+
+#workspaces button {
+    padding: 0px 10px;
+    color: #777777; /* Dimmed for inactive */
+    background: transparent;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+#workspaces button.active {
+    color: #ffffff; /* Bright white for active */
+    border-bottom: 2px solid #ffffff; /* Subtle underline for the active number */
+    border-radius: 0;
+}
+
+#workspaces button.urgent {
+    color: #ff5555;
+}
+
+#workspaces button:hover {
+    background: #1a1a1a;
+    color: #ffffff;
+    border-radius: 8px;
+}
+
+#window {
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+#battery.critical:not(.charging) {
+    background-color: #f53c3c;
+    color: #ffffff;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blink {
+    to {
+        background-color: #000000;
+        color: #f53c3c;
+    }
+}
