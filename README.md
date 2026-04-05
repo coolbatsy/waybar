@@ -1,1 +1,4 @@
-Basic scripts for a minimal amoled wayabr set up in your Hyprland. <img width="1920" height="1080" alt="2026-04-05-180725_hyprshot" src="https://github.com/user-attachments/assets/5fd5b848-d28d-4724-963d-8351c3c818f0" />
+Basic scripts for a minimal amoled waybar set up in your Hyprland. 
+
+
+<img width="1920" height="1080" alt="2026-04-05-180725_hyprshot" src="https://github.com/user-attachments/assets/5fd5b848-d28d-4724-963d-8351c3c818f0" />
